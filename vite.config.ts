@@ -3,10 +3,13 @@ import vue from "@vitejs/plugin-vue";
 import svgLoader from "vite-svg-loader";
 import legacy from "@vitejs/plugin-legacy";
 import vueJsx from "@vitejs/plugin-vue-jsx";
+import WindiCSS from "vite-plugin-windicss";
 import { warpperEnv, regExps } from "./build";
+import liveReload from "vite-plugin-live-reload";
 import { viteMockServe } from "vite-plugin-mock";
 import styleImport from "vite-plugin-style-import";
 import ElementPlus from "unplugin-element-plus/vite";
+import removeConsole from "vite-plugin-remove-console";
 import { UserConfigExport, ConfigEnv, loadEnv } from "vite";
 import themePreprocessorPlugin from "@zougt/vite-plugin-theme-preprocessor";
 
@@ -82,6 +85,11 @@ export default ({ command, mode }: ConfigEnv): UserConfigExport => {
       vue(),
       // jsx、tsx语法支持
       vueJsx(),
+      WindiCSS(),
+      // 线上环境删除console
+      removeConsole(),
+      // 修改layout文件夹下的文件时自动重载浏览器 解决 https://github.com/xiaoxian521/vue-pure-admin/issues/170
+      liveReload(["src/layout/**/*"]),
       // 自定义主题
       themePreprocessorPlugin({
         scss: {

@@ -1,6 +1,8 @@
 <h1>vue-pure-admin</h1>
 
-[![license](https://img.shields.io/github/license/xiaoxian521/vue-pure-admin.svg)](LICENSE)
+![GitHub license](https://img.shields.io/github/license/xiaoxian521/vue-pure-admin?style=flat)
+![GitHub stars](https://img.shields.io/github/stars/xiaoxian521/vue-pure-admin?color=fa6470&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/xiaoxian521/vue-pure-admin?style=flat)
 
 **中文** | [English](./README.en-US.md)
 
@@ -10,16 +12,16 @@ vue-pure-admin 是一个免费开源的中后台模版。使用了最新的`vue3
 
 ## 配套视频
 
-教程：<https://www.bilibili.com/video/BV1534y1S7HV/>  
-UI 设计：<https://www.bilibili.com/video/BV17g411T7rq/>
+- [点我查看教程](https://www.bilibili.com/video/BV1534y1S7HV)
+- [点我查看 UI 设计](https://www.bilibili.com/video/BV17g411T7rq)
 
 ## 配套文档
 
-<https://pure-admin-doc.vercel.app/>
+- [点我查看文档](https://pure-admin-doc.vercel.app)
 
 ## 精简版
 
-仓库地址：<https://github.com/xiaoxian521/pure-admin-thin>
+- [点我查看精简版](https://github.com/xiaoxian521/pure-admin-thin)
 
 ## 预览
 
@@ -122,11 +124,11 @@ pnpm build
 
 <img src="http://yiming_chang.gitee.io/manages/pay.jpg" width="150px" height="150px" />
 
-## 付费咨询、需求定制
+## 微信交流群
 
-作者精力有限，需要提供技术服务的可扫下面的二维码加微信，添加请备注来意
+为了项目更好的发展，你可选择捐赠 10 元后添加下图微信拉你进群，添加后请自觉发捐赠截图
 
-<img src="http://yiming_chang.gitee.io/manages/wechat.jpg" width="150px" height="150px" />
+<img src="http://yiming_chang.gitee.io/manages/kf.jpg" width="150px" height="195px" />
 
 ## 许可证
 

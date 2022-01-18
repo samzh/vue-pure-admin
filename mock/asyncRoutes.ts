@@ -5,29 +5,29 @@ import { MockMethod } from "vite-plugin-mock";
 const systemRouter = {
   path: "/system",
   name: "system",
-  redirect: "/system/user",
+  redirect: "/system/user/index",
   meta: {
     icon: "Setting",
-    title: "message.hssysManagement",
+    title: "menus.hssysManagement",
     i18n: true,
     showLink: true,
     rank: 6
   },
   children: [
     {
-      path: "/system/user",
+      path: "/system/user/index",
       name: "user",
       meta: {
-        title: "message.hsBaseinfo",
+        title: "menus.hsBaseinfo",
         i18n: true,
         showLink: true
       }
     },
     {
-      path: "/system/dict",
+      path: "/system/dict/index",
       name: "dict",
       meta: {
-        title: "message.hsDict",
+        title: "menus.hsDict",
         i18n: true,
         showLink: true,
         keepAlive: true
@@ -39,9 +39,9 @@ const systemRouter = {
 const permissionRouter = {
   path: "/permission",
   name: "permission",
-  redirect: "/permission/page",
+  redirect: "/permission/page/index",
   meta: {
-    title: "message.permission",
+    title: "menus.permission",
     icon: "Lollipop",
     i18n: true,
     showLink: true,
@@ -49,19 +49,19 @@ const permissionRouter = {
   },
   children: [
     {
-      path: "/permission/page",
+      path: "/permission/page/index",
       name: "permissionPage",
       meta: {
-        title: "message.permissionPage",
+        title: "menus.permissionPage",
         i18n: true,
         showLink: true
       }
     },
     {
-      path: "/permission/button",
+      path: "/permission/button/index",
       name: "permissionButton",
       meta: {
-        title: "message.permissionButton",
+        title: "menus.permissionButton",
         i18n: true,
         showLink: true,
         authority: []
@@ -76,7 +76,7 @@ const tabsRouter = {
   redirect: "/tabs/index",
   meta: {
     icon: "IF-team-icontabs",
-    title: "message.hstabs",
+    title: "menus.hstabs",
     i18n: true,
     showLink: true,
     rank: 8
@@ -86,7 +86,7 @@ const tabsRouter = {
       path: "/tabs/index",
       name: "reTabs",
       meta: {
-        title: "message.hstabs",
+        title: "menus.hstabs",
         showLink: true,
         i18n: true
       }
